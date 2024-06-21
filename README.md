@@ -30,14 +30,21 @@ It allows users to take quizzes on various topics such as science, Geography, Sp
 
 ---
 
-
 ### Setup
 
+If you want to build locally, you need to install and set up Android Studio or Xcode to compile and run Android and iOS projects on your local machine.
+See the following on how to set up these tools:
+
+Android Studio: [Docs](https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=physical&mode=development-build&buildEnv=local#set-up-an-android-device-with-a-development-build)
+
+Xcode: [Docs](https://docs.expo.dev/get-started/set-up-your-environment/?platform=ios&device=physical&mode=development-build&buildEnv=local#set-up-an-ios-device-with-a-development-build)
+
 Follow these steps to set up the PlutoQuiz app on your local machine:
+
 Prerequisites
 
     Node.js
-    Expo CLI
+    Expo CLI (npm install -g eas-cli)
 
 ### Installation
 
@@ -51,6 +58,8 @@ Install dependencies:
 
 ```bash
 npm install
+
+npx expo install --fix // Upgrade all dependencies to match the installed SDK version.
 ```
 
 Enter your expo projectId in `app.json`
@@ -75,14 +84,15 @@ On an Android device or emulator: Press a
 
 On an iOS device or simulator: Press i
 
-Build App - iOS
+Build App
 
 ```bash
+# Build for ios
 eas build -p ios
-```
 
-Build App - Android
-
-```bash
+# Build for Android [.abb]
 eas build -p android
+
+# Build for Android [.apk]
+eas build -p android --profile preview
 ```
