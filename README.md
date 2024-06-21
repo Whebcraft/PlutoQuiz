@@ -78,11 +78,11 @@ On an iOS device or simulator: Press i
 Build App - iOS
 
 ```bash
-eas build -p ios --profile preview
+eas build -p ios
 ```
 
 Build App - Android
 
 ```bash
-eas build -p android --profile preview
+eas build -p android
 ```
