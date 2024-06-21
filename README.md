@@ -74,3 +74,15 @@ Run the app:
 On an Android device or emulator: Press a 
 
 On an iOS device or simulator: Press i
+
+Build App - iOS
+
+```bash
+eas build -p ios --profile preview
+```
+
+Build App - Android
+
+```bash
+eas build -p android --profile preview
+```
