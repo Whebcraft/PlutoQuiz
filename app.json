@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "PlutoQuiz",
+    "slug": "PlutoQuiz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#1f2935"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1f2935"
+      },
+      "package": "com.creativeapps.plutoquiz",
+      "versionCode": 1
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./app/fonts/nunlight.ttf",
+            "./app/fonts/nunregular.ttf",
+            "./app/fonts/nunbold.ttf"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "YOUR-PROJECT-ID"
+      }
+    }
+  }
+}
